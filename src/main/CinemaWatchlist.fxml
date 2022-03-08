@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.layout.Pane?>
+<BorderPane fx:controller="main.CinemaWatchlistController" xmlns:fx="http://javafx.com/fxml"
+            stylesheets="/main/resources/styles/CinemaWatchlist.css">
+
+    <top>
+        <VBox>
+            <!--create title bar-->
+            <BorderPane id="titlebar">
+                <left>
+                    <Label fx:id="title" id="title" text="Cinema Watchlist - Library"/>
+                </left>
+                <right>
+                    <HBox id="titlebarButtonsGroup">
+                        <Button styleClass="titlebarButtons"
+                                style="-fx-graphic: url('/main/resources/icons/minimize.png')"
+                                onAction="#minimizeButtonAction"/>
+                        <Button styleClass="titlebarButtons" style="-fx-graphic: url('/main/resources/icons/close.png')"
+                                onAction="#closeButtonAction"/>
+                    </HBox>
+                </right>
+            </BorderPane>
+            <!--create toolbar below title bar-->
+            <HBox id="toolbar" spacing="40">
+                <HBox spacing="2">
+                    <Button styleClass="toolbarButtons1" text="Library"
+                            style="-fx-graphic: url('/main/resources/icons/library.png')"
+                            onAction="#libraryButtonAction"/>
+                    <Button styleClass="toolbarButtons1" text="Watched"
+                            style="-fx-graphic: url('/main/resources/icons/watched.png')"
+                            onAction="#watchedButtonAction"/>
+                    <Button styleClass="toolbarButtons1" text="Unwatched"
+                            style="-fx-graphic: url('/main/resources/icons/unwatched.png')"
+                            onAction="#unwatchedButtonAction"/>
+                </HBox>
+                <HBox spacing="2">
+                    <Button styleClass="toolbarButtons2" text="Add Film"
+                            style="-fx-graphic: url('/main/resources/icons/add.png')" onAction="#addFilmButtonAction"/>
+                    <Button styleClass="toolbarButtons2" text="Random"
+                            style="-fx-graphic: url('/main/resources/icons/random.png')"
+                            onAction="#randomButtonAction"/>
+                    <Button styleClass="toolbarButtons2" text="Summary"
+                            style="-fx-graphic: url('/main/resources/icons/summary.png')"
+                            onAction="#summaryButtonAction"/>
+                    <TextField fx:id="searchBar" id="searchBar" promptText="Search title, genre, director, etc.."
+                               onAction="#searchOnEnter"/>
+                </HBox>
+            </HBox>
+        </VBox>
+    </top>
+
+    <center>
+        <!--create table-->
+        <TableView fx:id="tableView">
+            <placeholder>
+                <Label text="No records found"/>
+            </placeholder>
+            <columns>
+                <TableColumn styleClass="tableColumns" fx:id="Title" text="Title" prefWidth="300"/>
+                <TableColumn styleClass="tableColumns" fx:id="Year" id="year" text="Year" minWidth="75" maxWidth="75"
+                             prefWidth="75"/>
+                <TableColumn styleClass="tableColumns" fx:id="Genre" text="Genre(s)" prefWidth="150"/>
+                <TableColumn styleClass="tableColumns" fx:id="Director" text="Director(s)" prefWidth="200"/>
+                <TableColumn styleClass="tableColumns" fx:id="Watched" id="watched" text="Watched" minWidth="75"
+                             maxWidth="75" prefWidth="75"/>
+                <TableColumn styleClass="tableColumns" fx:id="Rating" id="rating" text="Rating" minWidth="75"
+                             maxWidth="75" prefWidth="75"/>
+            </columns>
+        </TableView>
+    </center>
+
+    <bottom>
+        <!--displays number of films in database-->
+        <HBox id="bottomPane">
+            <Region prefWidth="925"/>
+            <Label fx:id="numberOfRecords" id="numberOfRecords"/>
+        </HBox>
+    </bottom>
+
+    <!--create left padding-->
+    <left>
+        <Pane>
+            <Region prefWidth="25"/>
+        </Pane>
+    </left>
+
+    <!--create right padding-->
+    <right>
+        <Pane>
+            <Region prefWidth="25"/>
+        </Pane>
+    </right>
+
+</BorderPane>

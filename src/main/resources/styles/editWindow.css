@@ -1,0 +1,141 @@
+.root {
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #1a2739, #426493);
+    -fx-border-color: grey;
+}
+
+
+#titlebar {
+    -fx-background-color: #2b4666;
+    -fx-font-size: 14;
+}
+
+#title {
+    -fx-text-fill: white;
+    -fx-padding: 6;
+}
+
+#titlebarButtonsGroup {
+     -fx-spacing: 15px;
+ }
+
+.titlebarButtons {
+     -fx-background-color: #2b4666;
+     -fx-text-fill: white;
+     -fx-background-radius: 0;
+}
+
+#fieldsGroup {
+    -fx-padding: 15 15 0 15;
+}
+
+.fields{
+    -fx-padding: 2;
+}
+
+.fieldLabels {
+    -fx-background-color: #2b4666;
+    -fx-text-fill: white;
+    -fx-background-radius: 0;
+    -fx-padding: 5, 5, 0, 25;
+    -fx-font-size: 13;
+    -fx-pref-width: 100;
+    -fx-pref-height: 30;
+}
+
+.textFields {
+    -fx-background-radius: 0;
+    -fx-padding: 5;
+    -fx-font-size: 13;
+    -fx-pref-width: 330;
+    -fx-pref-height: 30;
+}
+
+#hasWatchedPane {
+    -fx-background-color: white;
+    -fx-background-radius: 0;
+    -fx-border-color: lightgrey;
+    -fx-padding: 5;
+    -fx-font-size: 12;
+    -fx-pref-width: 115;
+    -fx-pref-height: 18;
+}
+
+#hasWatched {
+    -fx-background-radius: 0;
+    -fx-alignment: center;
+}
+
+#hasWatched:selected > .box,
+#hasWatched > .box {
+    /* background color for selected checkbox */
+    -fx-background-color: transparent;
+    -fx-border-color: lightgrey;
+}
+
+#hasWatched:selected > .box > .mark,
+#hasWatched:indeterminate  > .box > .mark {
+    /* modify mark color */
+    -fx-background-color: red;
+
+    /*
+    Heart
+    -fx-shape: "
+                 M 213.1,6.7
+                 c -32.4-14.4-73.7,0-88.1,30.6
+                 C 110.6,4.9,67.5-9.5,36.9,6.7
+                 C 2.8,22.9-13.4,62.4,13.5,110.9
+                 C 33.3,145.1,67.5,170.3,125,217
+                 c 59.3-46.7,93.5-71.9,111.5-106.1
+                 C 263.4,64.2,247.2,22.9,213.1,6.7
+                 z";
+
+    Cross
+    -fx-shape: "M2 1 h1 v1 h1 v1 h-1 v1 h-1 v-1 h-1 v-1 h1 z"
+
+    ZipZag
+    -fx-shape: "M2,2 L8,2 L2,5 L8,5 L2,8 L8,8";
+    */
+}
+
+#year {
+    -fx-pref-width: 115;
+}
+
+
+
+.slider .axis {
+    -fx-tick-label-fill: white;
+}
+
+#addFilmPane {
+    -fx-alignment: center;
+    -fx-padding: 5 0 0 0;
+}
+
+#addFilmButton, #deleteFilmButton {
+    -fx-background-color: #2b4666;
+    -fx-text-fill: white;
+    -fx-background-radius: 0;
+    -fx-padding: 5;
+    -fx-font-size: 12;
+    -fx-pref-width: 100;
+}
+
+.deleteConfirmation {
+    -fx-background-color: #680909;
+    -fx-text-fill: white;
+    -fx-color: white;
+    -fx-border-color: grey;
+}
+
+.deleteConfirmation > .content.label {
+    -fx-text-fill:white;
+}
+
+.deleteConfirmation .button {
+     -fx-background-color: #7f0a0a;
+     -fx-text-fill: white;
+     -fx-background-radius: 0;
+ }
+
+

@@ -1,0 +1,67 @@
+.root {
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #1a2739, #426493);
+    -fx-border-color: grey;
+}
+
+
+#titlebar {
+    -fx-background-color: #2b4666;
+    -fx-font-size: 14;
+}
+
+#title {
+    -fx-text-fill: white;
+    -fx-padding: 6;
+}
+
+#titlebarButtonsGroup {
+     -fx-spacing: 15px;
+ }
+
+.titlebarButtons {
+     -fx-background-color: #2b4666;
+     -fx-text-fill: white;
+     -fx-background-radius: 0;
+}
+
+#fieldsGroup {
+    -fx-padding: 15 35 0 35;
+}
+
+.fields{
+    -fx-padding: 2;
+}
+
+.fieldLabels {
+    -fx-background-color: #2b4666;
+    -fx-text-fill: white;
+    -fx-background-radius: 0;
+    -fx-padding: 5, 5, 0, 25;
+    -fx-font-size: 13;
+    -fx-pref-width: 140;
+    -fx-pref-height: 30;
+}
+
+.textFields {
+    -fx-background-radius: 0;
+    -fx-padding: 5;
+    -fx-font-size: 13;
+    -fx-pref-width: 135;
+    -fx-pref-height: 30;
+    -fx-max-height: 30;
+}
+
+.comboBoxes {
+    -fx-background-radius: 0;
+    -fx-padding: 5;
+    -fx-font-size: 13;
+    -fx-pref-width: 135;
+    -fx-pref-height: 30;
+    -fx-max-height: 30;
+}
+
+.comboBoxes > .list-cell {
+    -fx-padding: 0 0 0 0;
+    -fx-border-insets: 0 0 0 0;
+}
+

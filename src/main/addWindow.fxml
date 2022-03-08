@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Slider?>
+<BorderPane fx:controller="main.addWindowController" xmlns:fx="http://javafx.com/fxml"
+            stylesheets="/main/resources/styles/addWindow.css">
+
+    <top>
+        <!--create title bar-->
+        <BorderPane id="titlebar">
+            <left>
+                <Label fx:id="title" id="title" text="Add Film"/>
+            </left>
+            <right>
+                <HBox id="titlebarButtonsGroup">
+                    <Button styleClass="titlebarButtons" style="-fx-graphic: url('/main/resources/icons/minimize.png')"
+                            onAction="#minimizeButtonAction"/>
+                    <Button styleClass="titlebarButtons" style="-fx-graphic: url('/main/resources/icons/close.png')"
+                            onAction="#closeButtonAction"/>
+                </HBox>
+            </right>
+        </BorderPane>
+    </top>
+
+    <center>
+        <!--create user input fields-->
+        <VBox id="fieldsGroup">
+            <HBox styleClass="fields">
+                <Label styleClass="fieldLabels" text="Title"/>
+                <TextField fx:id="Title" styleClass="textFields" prefColumnCount="5" promptText="Enter title..."
+                           onMouseClicked="#revertColor"/>
+            </HBox>
+            <HBox styleClass="fields">
+                <Label styleClass="fieldLabels" text="Genre(s)"/>
+                <TextField fx:id="Genre" styleClass="textFields" prefColumnCount="5"
+                           promptText="Enter genres... (eg. Action, Horror)" onMouseClicked="#revertColor"/>
+            </HBox>
+            <HBox styleClass="fields">
+                <Label styleClass="fieldLabels" text="Director(s)"/>
+                <TextField fx:id="Director" styleClass="textFields" prefColumnCount="5" promptText="Enter directors..."
+                           onMouseClicked="#revertColor"/>
+            </HBox>
+            <HBox id="test" styleClass="fields">
+                <Label styleClass="fieldLabels" text="Watched"/>
+                <StackPane id="hasWatchedPane">
+                    <CheckBox fx:id="hasWatched" id="hasWatched"/>
+                </StackPane>
+                <Label styleClass="fieldLabels" text="Year"/>
+                <TextField fx:id="Year" styleClass="textFields" id="year" prefColumnCount="2" promptText="Enter year..."
+                           onMouseClicked="#revertColor"/>
+            </HBox>
+            <HBox styleClass="fields">
+                <Label fx:id="ratingLabel" styleClass="fieldLabels" text="Rating: 0.0"/>
+                <HBox>
+                    <Slider fx:id="ratingSlider" id="ratingSlider" prefWidth="330" blockIncrement="0.5"
+                            majorTickUnit="1" max="10" min="0" showTickLabels="true" showTickMarks="true"/>
+                </HBox>
+            </HBox>
+            <VBox id="addFilmPane">
+                <Button id="addFilmButton" text="Add Film" onAction="#addFilmButtonAction"/>
+            </VBox>
+        </VBox>
+    </center>
+
+</BorderPane>

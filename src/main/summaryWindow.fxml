@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ComboBox?>
+<BorderPane fx:controller="main.summaryWindowController" xmlns:fx="http://javafx.com/fxml"
+            stylesheets="/main/resources/styles/summaryWindow.css">
+
+    <top>
+        <!--create title bar-->
+        <BorderPane id="titlebar">
+            <left>
+                <Label fx:id="title" id="title" text="Summary"/>
+            </left>
+            <right>
+                <HBox id="titlebarButtonsGroup">
+                    <Button styleClass="titlebarButtons" style="-fx-graphic: url('/main/resources/icons/minimize.png')"
+                            onAction="#minimizeButtonAction"/>
+                    <Button styleClass="titlebarButtons" style="-fx-graphic: url('/main/resources/icons/close.png')"
+                            onAction="#closeButtonAction"/>
+                </HBox>
+            </right>
+        </BorderPane>
+    </top>
+
+    <center>
+        <VBox id="fieldsGroup">
+            <HBox styleClass="fields">
+                <Label styleClass="fieldLabels" text="Total number of films:"/>
+                <TextField fx:id="totalFilms" styleClass="textFields" editable="false"/>
+            </HBox>
+            <HBox styleClass="fields">
+                <Label styleClass="fieldLabels" text="Total watched films:"/>
+                <TextField fx:id="totalWatched" styleClass="textFields" editable="false"/>
+            </HBox>
+            <HBox styleClass="fields">
+                <Label styleClass="fieldLabels" text="Total unwatched film:"/>
+                <TextField fx:id="totalUnwatched" styleClass="textFields" editable="false"/>
+            </HBox>
+            <HBox styleClass="fields">
+                <Label styleClass="fieldLabels" text="Latest entry:"/>
+                <TextField fx:id="latestEntry" styleClass="textFields" editable="false"/>
+            </HBox>
+            <HBox styleClass="fields">
+                <Label fx:id="highestRatingLabel" styleClass="fieldLabels" text="Highest Rating(s):"/>
+                <ComboBox fx:id="highestRating" styleClass="comboBoxes"/>
+            </HBox>
+            <HBox styleClass="fields">
+                <Label fx:id="lowestRatingLabel" styleClass="fieldLabels" text="Lowest Rating(s):"/>
+                <ComboBox fx:id="lowestRating" styleClass="comboBoxes"/>
+            </HBox>
+        </VBox>
+    </center>
+
+
+</BorderPane>

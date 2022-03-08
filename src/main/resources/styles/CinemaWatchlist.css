@@ -1,0 +1,110 @@
+.root {
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #1a2739, #426493);
+    -fx-border-color: grey;
+}
+
+#titlebar {
+    -fx-background-color: #2b4666;
+    -fx-font-size: 14;
+}
+
+#title {
+    -fx-text-fill: white;
+    -fx-padding: 6, 6, 6, 6;
+}
+
+#titlebarButtonsGroup {
+     -fx-spacing: 15px;
+ }
+
+.titlebarButtons {
+     -fx-background-color: #2b4666;
+     -fx-text-fill: white;
+     -fx-background-radius: 0;
+}
+
+.toolbarButtons1, .toolbarButtons2 {
+    -fx-background-color: #2b4666;
+    -fx-text-fill: white;
+    -fx-background-radius: 0;
+    -fx-padding: 5;
+    -fx-font-size: 12;
+    -fx-pref-width: 120;
+}
+
+#searchBar {
+    -fx-background-radius: 0;
+    -fx-background-image:url('/main/resources/icons/search.png');
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: left 5 center;
+    -fx-padding: 5;
+    -fx-font-size: 12;
+    -fx-pref-width: 325;
+    -fx-pref-height: 32;
+    -fx-padding:  0px 0px 0px 30px;;
+}
+
+#toolbar {
+    -fx-padding: 10, 10, 10, 10;
+}
+
+.table-view {
+    -fx-focus-color: grey;
+    -fx-size: 500;
+}
+
+ .table-view .column-header .label {
+    -fx-alignment: CENTER-LEFT;
+    -fx-padding: 0 0 0 15;
+ }
+
+#year, #rating, #watched,
+.table-view .column-header#year .label,
+.table-view .column-header#rating .label,
+.table-view .column-header#watched .label {
+    -fx-alignment: CENTER;
+    -fx-padding: 0;
+}
+
+.table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header-background .filler {
+    -fx-base: #1d1d1d;
+    -fx-control-inner-background: #1d1d1d;
+    -fx-background-color: #2b4666;
+    -fx-border-color: grey;
+    -fx-border-width: 1;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 5;
+}
+
+
+.table-row-cell:selected {
+    -fx-background-color: lightblue;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+#numberOfRecords {
+    -fx-padding: 5,5,5,5;
+    -fx-text-fill: white;
+    -fx-font-size: 12;
+    -fx-text-alignment: right;
+}
+
+.table-view .scroll-bar:vertical .increment-button,
+.table-view .scroll-bar:vertical .decrement-button,
+.table-view .scroll-bar:horizontal .increment-button,
+.table-view .scroll-bar:horizontal .decrement-button,
+.table-view .scroll-bar:vertical,
+.table-view .scroll-bar:horizontal,
+.table-view .corner, .table-view .filler {
+    -fx-background-color: #1a2739;
+}
+
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb{
+    -fx-background-color: #2b4666;
+    -fx-background-radius: 0;
+}
