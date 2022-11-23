@@ -7,7 +7,7 @@ Patrick Mcginnis
 	
 The purpose of this program is to allow users to keep track of a film database.
 
-![Main Window All](Screenshots/main_1.jpg) "Main window All"
+![Main Window All](CinemaWatchList/Screenshots/main_1.jpg) "Main window All"
 
 The interface allows to view watched films
 
