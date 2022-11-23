@@ -5,42 +5,42 @@ Patrick Mcginnis
     
 ### DESCRIPTION	
 	
-    The purpose of this program is to allow users to keep track of a film database.
-    
-    ![Main Window All](Screenshots/main_1.jpg) "Main window All"
+The purpose of this program is to allow users to keep track of a film database.
 
-    The interface allows to view watched films
+![Main Window All](Screenshots/main_1.jpg) "Main window All"
 
-    ![Main Window Watched Toggle](Screenshots/main_2.jpg) "Main Window Watched"
+The interface allows to view watched films
 
-    View unwatched films
+![Main Window Watched Toggle](Screenshots/main_2.jpg) "Main Window Watched"
 
-    ![Main Window Unwatched] Toggle(Screenshots/main_3.jpg) "Maine Window Unwatched screenshot"
+View unwatched films
 
-    Users will be able to add, edit or delete any films in the list, as well as search for
-    any specific films. 
-    
-    ![Add](Screenshots/add_1.jpg "Add Movie")
-    
-    There will be clear feedback for missing fields and other errors.
+![Main Window Unwatched] Toggle(Screenshots/main_3.jpg) "Maine Window Unwatched screenshot"
 
-    ![Add Movie Error](Screenshots/add_2.jpg "Add Movie Error")
+Users will be able to add, edit or delete any films in the list, as well as search for
+any specific films. 
 
-    And finally search when successfully adding the movie.
+![Add](Screenshots/add_1.jpg "Add Movie")
 
-    ![Search Added](Screenshots/add_3.jpg "Find added Movie")
+There will be clear feedback for missing fields and other errors.
 
-    ![Search](Screenshots/search_2.jpg "Search Drama")
+![Add Movie Error](Screenshots/add_2.jpg "Add Movie Error")
 
-    The film list can be sorted and a random film can be selected.
+And finally search when successfully adding the movie.
 
-    ![Sort](Screenshots/sort_1.jpg "Sorted Rating")
+![Search Added](Screenshots/add_3.jpg "Find added Movie")
 
-    ![Random](Screenshots/search_1.jpg "Random Select")
+![Search](Screenshots/search_2.jpg "Search Drama")
 
-    Lastly, users have access to a summary window that will display information such as the total number of films,
-    total number of watched films, total number of unwatched films, a list of the user's highest rated watched films
-    and a list of the user's lowest rated watched films.
+The film list can be sorted and a random film can be selected.
 
-    ![Summary](Screenshots/summary_1.jpg) "Summary Window")
+![Sort](Screenshots/sort_1.jpg "Sorted Rating")
+
+![Random](Screenshots/search_1.jpg "Random Select")
+
+Lastly, users have access to a summary window that will display information such as the total number of films,
+total number of watched films, total number of unwatched films, a list of the user's highest rated watched films
+and a list of the user's lowest rated watched films.
+
+![Summary](Screenshots/summary_1.jpg) "Summary Window")
 	
