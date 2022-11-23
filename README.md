@@ -42,4 +42,6 @@ total number of watched films, total number of unwatched films, a list of the us
 and a list of the user's lowest rated watched films.
 
 ![Summary](/screenshots/summary_1.png "Summary Window")
+
+Thank you for taking a look! There is no SQL in this build in case you want to run the program easily and try out the functionality!
 	
