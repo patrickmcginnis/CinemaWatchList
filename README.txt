@@ -1,4 +1,4 @@
-    Name:  Shawn Pudjowargono, Patrick Mcginnis
+    Name:  Patrick Mcginnis
 
     Description:
     Cinema Watchlist program. 
