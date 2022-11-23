@@ -7,15 +7,15 @@ Patrick Mcginnis
 	
 The purpose of this program is to allow users to keep track of a film database.
 
-![Main Window All](screenshots/main_1.jpg) "Main window All"
+![Main Window All](screenshots/main_1.jpg "Main window All") 
 
 The interface allows to view watched films
 
-![Main Window Watched Toggle](screenshots/main_2.jpg) "Main Window Watched"
+![Main Window Watched Toggle](screenshots/main_2.jpg "Main Window Watched") 
 
 View unwatched films
 
-![Main Window Unwatched](screenshots/main_3.jpg) "Maine Window Unwatched screenshot"
+![Main Window Unwatched](screenshots/main_3.jpg "Main Window Unwatched screenshot") 
 
 Users will be able to add, edit or delete any films in the list, as well as search for
 any specific films. 
@@ -42,5 +42,5 @@ Lastly, users have access to a summary window that will display information such
 total number of watched films, total number of unwatched films, a list of the user's highest rated watched films
 and a list of the user's lowest rated watched films.
 
-![Summary](screenshots/summary_1.jpg) "Summary Window")
+![Summary](screenshots/summary_1.jpg "Summary Window")
 	
