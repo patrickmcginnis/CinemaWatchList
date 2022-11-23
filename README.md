@@ -1,10 +1,9 @@
-    
 # __Cinema Watchlist__
 
-Patrick Mcginnis
-    
+Patrick McGinnis
+
 ### DESCRIPTION	
-	
+
 The purpose of this program is to allow users to keep track of a film database.
 
 ![Main Window All](/screenshots/main_1.jpg "Main window All") 
