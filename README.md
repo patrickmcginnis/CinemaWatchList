@@ -25,6 +25,8 @@ There will be clear feedback for missing fields and other errors.
 
 ![Add Movie Error](/screenshots/add_2.png "Add Movie Error")
 
+![Add Movie Duplicate](/screenshots/add_4.png "Add Movie Duplicate")
+
 And finally search when successfully adding the movie.
 
 ![Search Added](/screenshots/add_3.png "Find added Movie")
